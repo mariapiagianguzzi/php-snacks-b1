@@ -7,15 +7,30 @@ conosciamo nella documentazione) che:
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
 
 
-
+<?php 
+   $email = $_GET["email"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email</title>
 </head>
 <body>
+
+<input type="text" placeholder="Inserisci la tua mail"> 
+<p><?php 
+  if(empty($email)){
+      if(strpos($email, "@") !== false && strpos(email, ".") !==) {
+          echo "Accesso riuscito"
+      } else {
+          echo = "Accesso negato"
+      }
+  }
+?></p>
+
+
     
 </body>
 </html>
